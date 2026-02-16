@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class Timetable</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    .timetable {
+        display: grid;
+        grid-template-columns: 80px 140px repeat(5, 1fr);
+        max-width: 1100px;
+        margin: 30px auto;
+        border: 2px solid #333;
+    }
+
+    .cell {
+        border: 1px solid #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header {
+        background-color: #34495e;
+        color: white;
+        font-weight: bold;
+    }
+
+    .lunch {
+        grid-column: 1 / -1;
+        background-color: #f39c12;
+        font-weight: bold;
+    }
+
+    .time {
+        background-color: #ecf0f1;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>CLASS TIMETABLE</h1>
+
+<div class="timetable">
+
+    <!-- Header Row -->
+    <div class="cell header">SL NO</div>
+    <div class="cell header">TIME</div>
+    <div class="cell header">MON</div>
+    <div class="cell header">TUE</div>
+    <div class="cell header">WED</div>
+    <div class="cell header">THU</div>
+    <div class="cell header">FRI</div>
+
+    <!-- Row 1 -->
+    <div class="cell">1</div>
+    <div class="cell time">9:00 - 10:00</div>
+    <div class="cell">Front-End</div>
+    <div class="cell">Applied Statistics</div>
+    <div class="cell">DBMS</div>
+    <div class="cell">Data Structure</div>
+    <div class="cell">Problem Solving</div>
+
+    <!-- Row 2 -->
+    <div class="cell">2</div>
+    <div class="cell time">10:00 - 11:00</div>
+    <div class="cell">Problem Solving</div>
+    <div class="cell">Data Structure</div>
+    <div class="cell">DBMS</div>
+    <div class="cell">Applied Statistics</div>
+    <div class="cell">Front-End</div>
+
+    <!-- Row 3 -->
+    <div class="cell">3</div>
+    <div class="cell time">11:00 - 12:00</div>
+    <div class="cell">DBMS</div>
+    <div class="cell">Front-End</div>
+    <div class="cell">Applied Statistics</div>
+    <div class="cell">Problem Solving</div>
+    <div class="cell">Data Structure</div>
+
+    <!-- Row 4 -->
+    <div class="cell">4</div>
+    <div class="cell time">12:00 - 1:00</div>
+    <div class="cell">Data Structure</div>
+    <div class="cell">Problem Solving</div>
+    <div class="cell">Front-End</div>
+    <div class="cell">DBMS</div>
+    <div class="cell">Applied Statistics</div>
+
+    <!-- Lunch Break -->
+    <div class="cell lunch">🍽️ LUNCH BREAK (1:00 - 2:00)</div>
+
+    <!-- Row 5 -->
+    <div class="cell">5</div>
+    <div class="cell time">2:00 - 3:00</div>
+    <div class="cell">Applied Statistics</div>
+    <div class="cell">DBMS</div>
+    <div class="cell">Data Structure</div>
+    <div class="cell">Front-End</div>
+    <div class="cell">Problem Solving</div>
+
+</div>
+
+</body>
+</html>
